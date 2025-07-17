@@ -80,7 +80,7 @@ add_library(data_tamer ${LIB_TYPE}
 if (MSVC)
     target_compile_options(data_tamer PRIVATE /W4 /WX)
 else()
-    target_compile_options(data_tamer PRIVATE -Wall -Wconversion -Wextra -Wsign-conversion -Werror -Wpedantic -Wno-sign-conversion)
+    target_compile_options(data_tamer PRIVATE -Wall -Wconversion -Wextra -Wsign-conversion -Wpedantic -Wno-sign-conversion)
 endif()
 
 target_compile_features(data_tamer PUBLIC cxx_std_17)
